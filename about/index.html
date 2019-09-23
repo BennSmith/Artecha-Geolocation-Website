@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About</title>
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div class="background"></div>
+    <div class="container">
+        <h2>More Information</h2>
+        <br>
+        <h3>What is this Site?</h3>
+        <p>
+            This site was designed as part of ARTECHA at Miami University. It links with an app that uses GeoLocation to record the locations of users as they walk across Miami's campus. Their coordinates are sent to a server which then reveals a respective part
+            of the image hidden on the site. As more people walk across, more areas of the image will be revealed. Some paths less travelled may need to be taken in order to unveil the full image.
+        </p>
+        <h3>Wait what data are you collecting?</h3>
+        <p>
+            Just your latitude and longitude. We are collecting this information for the sole purpose of mappping the location of people onto the image for this project. The locations we get are not connected to a specific user.
+        </p>
+        <h3>How do I participate?</h3>
+        <ol>
+            <li>Download the Expo app from the app store.</li>
+            <li>Login to Expo with the following account:<br>Username: geo-artecha<br>Password: artecha</li>
+            <li>In the Profile tab, under "Published Projects" click on IMS-Artecha</li>
+            <li>Press the "BEGIN" button to recording location the app. You may now leave the app.</li>
+
+        </ol>
+        <p></p>
+        <h3>Where on campus is this?</h3>
+        <p>
+            The app records locations pretty much on the main part of campus, north of the Rec Center/Harris Drive and south of High Street.
+        </p>
+        <h3>What is Expo?</h3>
+        <p>
+            Expo is an app development platform used for developing applications in react-native for both iOS and Android. It is being used for quick deployment of the app to users. You do not need to create an account for the app to work. We are merely using it
+            for the ease of getting the app into users hands. The login enables you to access the application.
+        </p>
+        <h3>How do I stop the App?</h3>
+        <p>
+            On iPhones, double tap the home button, and then swipe the Expo app up. This is how you quit applications on iPhones. (Fun fact, all apps run in the background until you quit them.) On Android, open the recent applications menu (method varies for different
+            Android devices). Alternatively, delete the Expo app from your device.
+        </p>
+    </div>
+
+</body>
+
+<style>
+    * {
+        color: #ffffff !important;
+        text-align: center;
+        z-index: 20;
+    }
+    
+    .background {
+        background-image: url('./artecha-bg.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 960px;
+        width: 100%;
+        margin: 32px auto;
+        padding: 5vw;
+        background-color: rgba(0, 0, 0, 0.9);
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        border: 2px solid white;
+        outline: 2px solid rgba(0, 0, 0, 0.9);
+    }
+    
+    p {
+        margin-bottom: 4rem;
+        text-align: center;
+        text-align-last: center;
+    }
+</style>
+
+</html>

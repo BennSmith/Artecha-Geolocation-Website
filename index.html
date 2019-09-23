@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IMS</title>
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-database.js"></script>
+
+    <!-- JQUERY -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+
+    <section id="artboard" class="section">
+        <canvas id="canvas">
+        </canvas>
+    </section>
+
+    <div class="overlay">
+        <div id="about">
+            <h6>About this Project</h6>
+            <p>
+                This project uses geolocation to map the locations of users across
+                Miami's campus onto an image.  As people move across campus, they
+                will gradually reveal more and more of the image.
+            </p>
+        </div>
+        <hr>
+        <div id="download">
+            <h6>How to Participate</h6>
+            <ol>
+                <li>Download the Expo app from the app store.</li>
+                <li>Login to Expo with the following account <br>User: geo-artecha<br>Password: artecha</li>
+                <li>In the Profile tab, under "Published Projects" click on IMS-Artecha</li>
+                <li>Press the "BEGIN" button to recording location the app.  You may now leave the app.</li>
+            </ol>
+        </div>
+        <br>
+        <p>For more information <a href="./about/index.html" target="blank">click here</a></p>
+    </div>
+
+</body>
+
+<!-- We run this here to make sure it runs -->
+<script>
+    document.getElementById('canvas').setAttribute('width', document.body.clientWidth - 8);
+    if (document.body.clientWidth > 600) {
+        document.getElementById('canvas').setAttribute('height', document.body.clientHeight - 8);
+    } else {
+        document.getElementById('canvas').setAttribute('height', (2 / 3) * document.body.clientWidth);
+    }
+</script>
+<script src="js/script.js"></script>
+
+</html>
